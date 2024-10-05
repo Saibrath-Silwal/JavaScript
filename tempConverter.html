@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <input type="text" id="temp">
+        <input type="button" id="F_to_C" value="F to C">
+        <input type= "button" id="C_to_F" value="C to F">
+    </p>
+    <p id="result"></p>
+    <script>
+        var report = function (celcius, faherenheight){
+            document.getElementById("result").innerHTML = celcisu + "\xbOC = " + faherenheight + "\xbOC";
+        };
+        document.getElementById("F_to_C").onclick = function () {
+            var f = document.getElementById("temp").value;
+            report((f - 32)/1.8,f);
+        };
+        document.getElementById("C_to_F").onClick = function () {
+            var c = document.getElementById("temp").value;
+            report(c,1.8*c+32);
+        }
+    </script>
+</body>
+</html>

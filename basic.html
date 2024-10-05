@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //learning JavaScript from scratch:
+
+        //alert function:
+        alert("hello my name is " + prompt("enter your name:") + " I live in " + prompt("enter your city") + " it's very cold here");
+
+        //random and math function
+        alert("you rolled a " + (Math.floor(Math.random() * 6) + 1) + "!");
+
+        //uppercase and lower case function
+        var message = prompt("Enter a sentence: ");
+        alert("Shouted" + message.toUpperCase());
+        alert("tone down " + message.toLowerCase());
+
+        //tells how many days until new year
+        var now = new Date();
+        var newYear = new Date(now.getFullYear() + 1, 0, 1);
+        var days = (newYear - now) / 86400000;
+        alert("From " + now + ", " + days + " days until the new year!");
+
+        //an input box to write script in it
+        eval(prompt("type in script:"));
+
+        //change the background color I guess
+        document.body.style.backgroundcolor="green";
+    </script>
+</body>
+
+</html>
